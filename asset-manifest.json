@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/rent-car/static/css/main.76a9b3f5.css",
+    "main.js": "/rent-car/static/js/main.35ebd314.js",
+    "static/css/936.2c06fdb0.chunk.css": "/rent-car/static/css/936.2c06fdb0.chunk.css",
+    "static/js/936.285bfb5f.chunk.js": "/rent-car/static/js/936.285bfb5f.chunk.js",
+    "static/js/822.c6e8949b.chunk.js": "/rent-car/static/js/822.c6e8949b.chunk.js",
+    "static/media/background-home.jpg": "/rent-car/static/media/background-home.a648cee0f4f8e0a6eb0d.jpg",
+    "static/media/montserrat-v26-latin-600.woff2": "/rent-car/static/media/montserrat-v26-latin-600.4201798fe1a74331c392.woff2",
+    "static/media/montserrat-v26-latin-regular.woff2": "/rent-car/static/media/montserrat-v26-latin-regular.9ef09180105730e3cb92.woff2",
+    "static/media/manrope-v15-latin-600.woff2": "/rent-car/static/media/manrope-v15-latin-600.ec61c26ae9843c74c66e.woff2",
+    "static/media/manrope-v15-latin-regular.woff2": "/rent-car/static/media/manrope-v15-latin-regular.5b06bf94f857e4244b64.woff2",
+    "static/media/manrope-v15-latin-500.woff2": "/rent-car/static/media/manrope-v15-latin-500.b6bf3db6256270076d37.woff2",
+    "index.html": "/rent-car/index.html",
+    "main.76a9b3f5.css.map": "/rent-car/static/css/main.76a9b3f5.css.map",
+    "main.35ebd314.js.map": "/rent-car/static/js/main.35ebd314.js.map",
+    "936.2c06fdb0.chunk.css.map": "/rent-car/static/css/936.2c06fdb0.chunk.css.map",
+    "936.285bfb5f.chunk.js.map": "/rent-car/static/js/936.285bfb5f.chunk.js.map",
+    "822.c6e8949b.chunk.js.map": "/rent-car/static/js/822.c6e8949b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76a9b3f5.css",
+    "static/js/main.35ebd314.js"
+  ]
+}
