@@ -1,0 +1,14 @@
+.logo {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    display: block;
+    width: 115px;
+    height: 90px;
+    padding: 0;
+    fill: var(--color-primary-text);
+  }
+
+}

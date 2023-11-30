@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;  
+  gap: 100px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.nav-link {
+  transition: color var(--transition);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-secondary-text);
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    padding: 0px 32px ;
+  }
+
+  .nav-list {
+    margin-left: auto;
+    margin-right: 0;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width:1440px) {
+  .navigation{
+    padding: 0 128px;
+  }
+  
+}

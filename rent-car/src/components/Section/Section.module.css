@@ -1,0 +1,15 @@
+.section {
+  padding: 30px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 50px 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    padding: 50px 128px;
+  }
+}
