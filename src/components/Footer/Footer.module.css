@@ -13,8 +13,7 @@
 
   font-weight: 400;
   font-size: 16px;
-  letter-spacing: 1.2px;  
-
+  letter-spacing: 1.2px;
 }
 
 .footer-link {
@@ -23,8 +22,6 @@
 }
 
 .footer-link:hover,
-.footer-link:focus{
+.footer-link:focus {
   color: var(--color-secondary-text);
-
 }
-

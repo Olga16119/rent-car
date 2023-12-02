@@ -6,7 +6,11 @@ const Navigation = () => {
   return (
     <nav className={css['navigation']}>
       <NavLink to="/">
-        <Logo width={100} height={100} id={'../../images/svg/rent-a-car-icon.svg'} />
+        <Logo
+          width={100}
+          height={100}
+          id={'../../images/svg/rent-a-car-icon.svg'}
+        />
       </NavLink>
 
       <ul className={css['nav-list']}>

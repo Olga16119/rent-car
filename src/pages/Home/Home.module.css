@@ -1,3 +1,11 @@
+body{
+        height: 100vh;
+  background-image: url('../../images/background-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero-title {
   font-size: 60px;
   font-weight: 500;

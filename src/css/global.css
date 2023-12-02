@@ -14,11 +14,6 @@ body {
   font-family: 'Manrope', sans-serif;
   color: var(--color-primary-text);
   line-height: 1.5;
-    height: 100vh;
-  background-image: url('../images/background-home.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 h1,

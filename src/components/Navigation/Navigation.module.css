@@ -6,7 +6,7 @@
 
 .nav-list {
   display: flex;
-  align-items: center;  
+  align-items: center;
   gap: 100px;
   margin: 0 auto;
   font-weight: 600;
@@ -24,7 +24,7 @@
 
 @media screen and (min-width: 768px) {
   .navigation {
-    padding: 0px 32px ;
+    padding: 0px 32px;
   }
 
   .nav-list {
@@ -34,9 +34,8 @@
   }
 }
 
-@media screen and (min-width:1440px) {
-  .navigation{
+@media screen and (min-width: 1440px) {
+  .navigation {
     padding: 0 128px;
   }
-  
 }
