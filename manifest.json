@@ -10,13 +10,9 @@
     {
       "src": "car_icon128.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "car_icon512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "128x128"
     }
+
   ],
   "start_url": ".",
   "display": "standalone",
