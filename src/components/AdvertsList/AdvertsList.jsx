@@ -4,11 +4,9 @@ import css from './AdvertsList.module.css';
 const AdvertsList = ({ cars }) => {
   return (
     <>
-      <ul className={css['catalog-list']}>
+      <ul className={`${css['flex-container']} ${css['catalog-list']}`}>
         {cars.map(car => (
-          <li className={css['card-item']} key={car.id}>
-            <Card data={car} />
-          </li>
+          <Card car={{ car }} />
         ))}
       </ul>
     </>

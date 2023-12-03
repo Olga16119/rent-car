@@ -1,5 +1,5 @@
-body{
-        height: 100vh;
+body {
+  height: 100vh;
   background-image: url('../../images/background-home.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +34,7 @@ body{
 }
 
 .start-btn:hover,
-.start-btn:focus{
+.start-btn:focus {
   background-color: var(--color-accent-active);
 }
 
@@ -57,7 +57,7 @@ body{
   }
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) {
   .hero-title {
     font-size: 86px;
     margin-bottom: 0;

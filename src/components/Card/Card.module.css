@@ -54,7 +54,7 @@
 }
 
 .accent {
-  color: var(--accent-colour);
+  color: var(--color-accent);
 }
 
 .favorite-btn {
@@ -80,19 +80,27 @@
 
 .not-checked {
   fill: transparent;
-  stroke: #fff;
+  stroke: var(--color-light);
 }
 
 .favorite-btn:hover .icon.not-checked {
-  fill: var(--accent-colour);
-  stroke: var(--accent-colour);
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
 }
 
 .checked {
-  fill: var(--accent-colour);
-  stroke: #fff;
+  fill: var(--color-accent);
+  stroke: var(--color-light);
 }
 
 .favorite-btn:hover .icon.checked {
-  fill: #fff;
+  fill: var(--color-light);
+}
+
+.button {
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--color-accent);
+  color: var(--color-light);
+  transition: background 0.3s ease;
 }

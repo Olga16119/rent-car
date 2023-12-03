@@ -1,0 +1,46 @@
+.btn-LoadMore {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--accent-colour);
+  background: transparent;
+  text-decoration: underline;
+  border: none;
+}
+
+.btn-loadMore:hover,
+.btn-loadMore:focus {
+  background: transparent;
+}
+
+.container {
+  width: 100%;
+  max-width: 368px;
+
+  margin: 0 auto;
+
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 764px) {
+  .container {
+    max-width: 764px;
+
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 20px;
+  }
+}
+
+.section {
+  padding: 40px 0;
+}

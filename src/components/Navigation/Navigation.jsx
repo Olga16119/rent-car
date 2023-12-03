@@ -21,8 +21,8 @@ const Navigation = () => {
         </li>
 
         <li>
-          <NavLink className={css['nav-link']} to="/favorites">
-            Favorites
+          <NavLink className={css['nav-link']} to="/favourites">
+            Favourites
           </NavLink>
         </li>
       </ul>

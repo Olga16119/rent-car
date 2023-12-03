@@ -6,9 +6,8 @@ axios.defaults.baseURL = 'https://6554dfc263cafc694fe722d5.mockapi.io/';
 export const getAllCars = createAsyncThunk('cars/getCars', async (_, thunkAPI) => {
   try {
     const { data: carData } = await axios.get(`/adverts?page=1&limit=12`);
-    const { data: favData } = await axios.get(`/favorites`);
 
-    return { carData, favData };
+    return { carData };
   } catch (error) {
     return thunkAPI.rejectWithValue(error.message);
   }
@@ -17,7 +16,7 @@ export const getAllCars = createAsyncThunk('cars/getCars', async (_, thunkAPI) =
 export const getFavourites = createAsyncThunk( 'cars/getFavourites',
   async (_, thunkAPI) => {
     try {
-      const responce = await axios.get(`/favorites`);
+      const responce = await axios.get(`/favourites`);
 
       return responce.data;
     } catch (error) {
@@ -52,8 +51,8 @@ export const getCar = createAsyncThunk(
   }
 );
 
-export const filterCars = createAsyncThunk(
-  'cars/filterCars',
+export const filtersCars = createAsyncThunk(
+  'cars/filtersCars',
   async ({ carBrand, price, from, to, page = 1, limit = 12 }, thunkAPI) => {
     try {
       const { data } = await axios.get(
@@ -89,25 +88,25 @@ export const filterCars = createAsyncThunk(
 
 export const toggleFavourite = createAsyncThunk(
   'cars/toggleFavourite',
-  async ({ id, isFav }, thunkAPI) => {
+  async ({ id, isFavourite }, thunkAPI) => {
     try {
-      if (isFav) {
+      if (isFavourite) {
         const { data } = await axios.get(`/favourites?carId=${id}`);
-        const { id: favId } = data[0];
+        const { id: carId } = data[0];
 
-        await axios.delete(`/favourites/${favId}`);
+        await axios.delete(`/favourites/${carId}`);
 
-        return { id, isFav };
+        return { id, isFavourite };
       }
 
       const { data } = await axios.get(`/adverts/${id}`);
 
-      const { data: favData } = await axios.post(`/favorites`, {
+      const { data: favData } = await axios.post(`/favourites`, {
         carId: id,
         ...data,
       });
 
-      return { id, isFav, car: data[0], favId: favData.id };
+      return { id, isFavourite, car: data[0], carId: favData.id };
     } catch (e) {
       thunkAPI.rejectWithValue(e.message);
     }

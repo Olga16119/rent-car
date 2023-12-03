@@ -21,7 +21,7 @@
   content: '';
   height: 16px;
   margin: 0 6px;
-  border: 0.5px solid var(--colour-text-select);
+  border: 0.5px solid var(--color-light-text);
 }
 
 .tag-text {

@@ -1,0 +1,85 @@
+.input-box {
+  position: relative;
+
+  color: var(--color-secondary-text);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+.input-box input {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+
+  width: 210px;
+
+  border: none;
+
+  border-radius: 14px;
+  background: var(--color-bg-select);
+}
+
+.input-box.thereIsSubList input {
+  padding-right: 40px;
+}
+
+.input-box.thereIsTextPlaceholder input {
+  padding-left: 35px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translateY(calc(-100% - 8px));
+}
+
+.input-box input:focus {
+  outline: 2px solid var(--colour-light-text);
+}
+
+.input-box input::placeholder {
+  color: var(--color-secondary-text);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}
+
+.input-box input[data-func='setCarBrand'] {
+  width: 100%;
+  max-width: 224px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+
+  transform: translateY(-50%);
+
+  transition: var(--transition);
+}
+
+.arrow.active {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.text-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+
+  transform: translateY(-50%);
+
+  color: var(--color-secondary-text);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}

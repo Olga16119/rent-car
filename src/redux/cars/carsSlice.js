@@ -4,7 +4,7 @@ import {
   getAllCars,
   addCars,
   getFavourites,
-  filterCars,
+  filtersCars,
   toggleFavourite,
 } from './CarsOperations.js';
 
@@ -18,7 +18,7 @@ const carsInitialState = {
 const carsSlice = createSlice({
   name: 'cars',
   initialState: carsInitialState,
-  extraReducers: {
+  reducers: {
     [toggleFavourite.fulfilled](state, { payload }) {
       if (payload.isFav) {
         state.favourites = state.favourites.filter(
@@ -58,13 +58,13 @@ const carsSlice = createSlice({
       state.isLoading = false;
     },
 
-    [filterCars.fulfilled](state, { payload }) {
+    [filtersCars.fulfilled](state, { payload }) {
       state.cars = [...payload];
 
       if (payload.length < 12) state.isButtonShown = false;
       else state.isButtonShown = true;
     },
-    [filterCars.rejected](state, action) {
+    [filtersCars.rejected](state, action) {
       console.log('rejected');
     },
   },
