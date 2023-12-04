@@ -13,9 +13,13 @@ RENT-CAR is an application for people who are looking for a rental car.
 
 Overwiev
 The base URL address of the application always welcomes users.
+![Home-page](./assets/Home.png)
 
 Catalog page where you can view the entire list of available cars for rent.
+![Catalog-page](./assets/Catalog.png)
 
 The Favorites page is a place filled by the user himself.
+![Favorite-page](./assets/Favourite.png)
 
 A modal window opens when you click on the Learn more about car button. It allows users to see detailed information about the car.
+![Edit-modal](./assets/Modal.png)

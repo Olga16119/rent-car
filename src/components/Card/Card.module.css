@@ -4,6 +4,8 @@
   height: 426px;
   width: 274px;
   flex-direction: column;
+  background-color: var(--color-light);
+  border-radius: 14px;
 }
 
 .image-thumb {
