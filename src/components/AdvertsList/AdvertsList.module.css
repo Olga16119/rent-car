@@ -19,7 +19,7 @@
   .flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--flex-items-gap);
+    gap: 29px;
   }
   .card-item {
     flex-basis: calc(100% / 4 - (29px * 3 / 4));

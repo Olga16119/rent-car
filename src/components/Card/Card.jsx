@@ -30,7 +30,7 @@ const Card = ({ car }) => {
     accessories,
   } = car;
 
-    const ID = carId !== undefined ? carId : id;
+    // const ID = carId !== undefined ? carId : id;
 
 
   const handlerToggleFavorite = async ({ currentTarget }) => {
@@ -41,9 +41,9 @@ const Card = ({ car }) => {
     setIsFavourite(!isFavourite);
   };
 
-  useEffect(() => {
-    setIsFavourite(favourites.some(({ carId }) => carId === ID));
-  }, [favourites, ID]);
+  // useEffect(() => {
+  //   setIsFavourite(favourites.some(({ carId }) => carId === ID));
+  // }, [favourites, ID]);
 
   const [isShowModal, setIsShowModal] = useState(false);
 

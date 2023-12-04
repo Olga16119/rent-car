@@ -12,6 +12,7 @@ import AdvertsList from 'components/AdvertsList/AdvertsList';
 const Catalog = () => {
   const dispatch = useDispatch();
   const { cars, isLoading } = useSelector(selectCars);
+  console.log(cars)
 
   useEffect(() => {
     dispatch(getAllCars());
@@ -38,7 +39,7 @@ const Catalog = () => {
             textAlign: 'center',
           }}
         />
-      ) : cars.length !== 0 ? (
+      ) : cars.length === 0 ? (
         <NoContent message={'Sorry, nothing was found'}/>
       ) : (
         <AdvertsList cars={cars} />
