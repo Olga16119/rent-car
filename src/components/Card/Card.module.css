@@ -74,36 +74,10 @@
   border: none;
 }
 
-.favavorite-btn .icon {
-  width: 100%;
-  height: 100%;
-
-  transition: stroke var(--transition), fill var(--transition);
-}
-
-.not-checked {
-  fill: transparent;
-  stroke: var(--color-light);
-}
-
-.favorite-btn:hover .icon.not-checked {
-  fill: var(--color-accent);
-  stroke: var(--color-accent);
-}
-
-.checked {
-  fill: var(--color-accent);
-  stroke: var(--color-light);
-}
-
-.favorite-btn:hover .icon.checked {
-  fill: var(--color-light);
-}
-
 .button {
   padding: 12px;
   border-radius: 12px;
   background: var(--color-accent);
   color: var(--color-light);
-  transition: background 0.3s ease;
+  transition: var(--transition);
 }

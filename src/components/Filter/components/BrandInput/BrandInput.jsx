@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import FormInput from '../FormInput/FormInput';
+import css from './BrandInput.module.css'
 
 const BrandInput=({ value })=> {
   const [carsBrands] = useState([
@@ -31,6 +32,7 @@ const BrandInput=({ value })=> {
     <FormInput
       label="Car brand"
       name="carBrand"
+       classesBox={[css['car-brand-input']]}
       value={value}
       placeholder="Enter the text"
       isThereSublist={true}

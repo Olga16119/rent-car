@@ -11,8 +11,8 @@
   border-bottom-right-radius: 0px;
   border-right: 1px solid var(--color-light-text);
 
-  padding-left: 65px !important;
-  width: 80px;
+  padding-left: 67px !important;
+  width: 90px;
 }
 
 .from-to-box .to-input {
@@ -20,5 +20,6 @@
   border-bottom-left-radius: 0px;
 
   padding-left: 43px !important;
-  width: 70px;
+  padding-right: 27px;
+  width: 90px;
 }

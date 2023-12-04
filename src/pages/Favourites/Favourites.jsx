@@ -9,7 +9,6 @@ import css from './Favourites.module.css'
 const Favourites=()=> {
   const dispatch = useDispatch();
   const { favourites, isLoading } = useSelector(selectCars);
-
   useEffect(() => {
     dispatch(getFavourites());
   }, [dispatch]);

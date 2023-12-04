@@ -6,13 +6,12 @@ Technology stack - [React, JS, CSS modules, Redux, Axios, REST API]
 
 Feature - Adaptive design
 
-API Requests are made to the mockapi.io service, where a mini back-end has been deployed for this project.
+API Requests are made to the mockapi.io service, where a mini back-end has been
+deployed for this project.
 
-About
-RENT-CAR is an application for people who are looking for a rental car.
+About RENT-CAR is an application for people who are looking for a rental car.
 
-Overwiev
-The base URL address of the application always welcomes users.
+Overwiev The base URL address of the application always welcomes users.
 ![Home-page](./assets/Home.png)
 
 Catalog page where you can view the entire list of available cars for rent.
@@ -21,5 +20,6 @@ Catalog page where you can view the entire list of available cars for rent.
 The Favorites page is a place filled by the user himself.
 ![Favorite-page](./assets/Favourite.png)
 
-A modal window opens when you click on the Learn more about car button. It allows users to see detailed information about the car.
+A modal window opens when you click on the Learn more about car button. It
+allows users to see detailed information about the car.
 ![Edit-modal](./assets/Modal.png)

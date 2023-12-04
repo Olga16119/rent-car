@@ -40,10 +40,6 @@ a {
   text-decoration: none;
 }
 
-/* a.active {
-  color: var(--color-accent-active);
-} */
-
 img {
   display: block;
   max-width: 100%;

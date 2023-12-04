@@ -1,24 +1,20 @@
 .input-box {
   position: relative;
-
   color: var(--color-secondary-text);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.28;
 }
 
-.input-box input {
+.input-box input {  
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 18px;
-  padding-right: 18px;
 
   font-size: 18px;
   font-weight: 500;
   line-height: 1.11;
-
-  width: 210px;
-
+  width: 42px;
   border: none;
 
   border-radius: 14px;
@@ -42,7 +38,7 @@
 }
 
 .input-box input:focus {
-  outline: 2px solid var(--colour-light-text);
+  outline: 2px solid var(--color-light-text);
 }
 
 .input-box input::placeholder {

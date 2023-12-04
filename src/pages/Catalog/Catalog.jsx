@@ -11,7 +11,6 @@ import AdvertsList from 'components/AdvertsList/AdvertsList';
 const Catalog = () => {
   const dispatch = useDispatch();
   const { cars, isLoading } = useSelector(selectCars);
-  console.log(cars)
 
   useEffect(() => {
     dispatch(getAllCars());
