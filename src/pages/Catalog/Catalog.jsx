@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Button from 'components/Button/Button';
 import Loader from 'components/Loader/Loader';
 import NoContent from 'components/NoContent/NoContent';
 import { useDispatch, useSelector } from 'react-redux';
@@ -45,7 +44,7 @@ const Catalog = () => {
         <AdvertsList cars={cars} />
       )}
       {isButtonShown ? (
-        <Button onButtonClick={handleLoadMore} styles={css['btn-LoadMore']} title="Load More" />
+        <button type='button' onClick={handleLoadMore} className={css['btn-LoadMore']}>Load More</button>
       ) : null}</div></section>
     </>
   );

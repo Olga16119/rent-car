@@ -20,7 +20,8 @@ const carsSlice = createSlice({
   initialState: carsInitialState,
   extraReducers: {
     [toggleFavourite.fulfilled](state, { payload }) {
-      if (payload.isFav) {
+      console.log({payload})
+      if (payload.isFavourite) {
         state.favourites = state.favourites.filter(
           ({ carId }) => carId !== payload.id
         );

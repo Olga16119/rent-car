@@ -6,7 +6,7 @@
 
   margin-left: auto;
   margin-right: auto;
-  color: var(--accent-colour);
+  color: var(--color-accent);
   background: transparent;
   text-decoration: underline;
   border: none;
@@ -15,6 +15,7 @@
 .btn-loadMore:hover,
 .btn-loadMore:focus {
   background: transparent;
+  color: var(--color-light);
 }
 
 .container {

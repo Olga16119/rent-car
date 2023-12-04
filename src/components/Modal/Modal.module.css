@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
 
-  background-color: var(--color-text-secondary);
+  background-color: var(--color-secondary-text);
 }
 
 .modal {
@@ -19,6 +19,7 @@
 
   border-radius: 10px;
   overflow: hidden;
+  background-color: var(--color-light);
 }
 
 .modal-container {
@@ -146,12 +147,13 @@
 
 .rental-btn {
   font-family: inherit;
-  width: 68px;
+  width: 168px;
   padding: 12px 50px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.43;
-  color: #fff;
+  text-align: center;
+  color: var(--color-light);
   border: none;
   border-radius: 12px;
   background-color: var(--color-accent);

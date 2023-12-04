@@ -6,8 +6,9 @@ axios.defaults.baseURL = 'https://6554dfc263cafc694fe722d5.mockapi.io/';
 export const getAllCars = createAsyncThunk('cars/getCars', async (_, thunkAPI) => {
   try {
     const { data: carData } = await axios.get(`/adverts?page=1&limit=12`);
+    const { data: favData } = await axios.get(`/favorites`);
 
-    return { carData };
+    return { carData, favData };
   } catch (error) {
     return thunkAPI.rejectWithValue(error.message);
   }
@@ -89,13 +90,13 @@ export const filtersCars = createAsyncThunk(
 export const toggleFavourite = createAsyncThunk(
   'cars/toggleFavourite',
   async ({ id, isFavourite }, thunkAPI) => {
+
     try {
       if (isFavourite) {
         const { data } = await axios.get(`/favourites?carId=${id}`);
         const { id: carId } = data[0];
 
         await axios.delete(`/favourites/${carId}`);
-
         return { id, isFavourite };
       }
 

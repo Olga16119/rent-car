@@ -8,11 +8,11 @@
 
   border: none;
   border-radius: 12px;
-  background-color: var(--accent-colour);
+  background-color: var(--color-accent);
   transition: background-color var(--transition);
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--accent-colour-active);
+  background-color: var(--color-accent-active);
 }

@@ -1,7 +1,8 @@
 .car-card {
   position: relative;
   display: flex;
-  height: 100%;
+  height: 426px;
+  width: 274px;
   flex-direction: column;
 }
 
